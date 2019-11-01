@@ -1,0 +1,14 @@
+Fundamental Algorithm
+
+input : set of images of same scene
+        - we can generate these from blurring/noise the given image
+
+Output: single high resolution image
+
+step 1:
+    for each input image generate a HR image using SRGAN
+    https://github.com/icpm/super-resolution/tree/master/SRGAN
+    
+step 2:
+    merge the generated HR images into one
+    https://github.com/Keep-Passion/SESF-Fuse
