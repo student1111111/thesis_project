@@ -31,7 +31,7 @@ def main():
     # ===========================================================
     print('===> Loading datasets')
     train_set = get_training_set(args.upscale_factor, args.image_dir)
-    test_set  = get_test_set(args.upscale_facto, args.image_dir)
+    test_set  = get_test_set(args.upscale_factor, args.image_dir)
     training_data_loader = DataLoader(dataset=train_set, batch_size=args.batchSize, shuffle=True)
     testing_data_loader  = DataLoader(dataset=test_set, batch_size=args.testBatchSize, shuffle=False)
 
