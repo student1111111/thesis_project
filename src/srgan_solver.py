@@ -68,6 +68,7 @@ class SRGANTrainer(object):
 
     def pretrain(self):
         self.netG.train()
+        print("self.netG.train done")
         for batch_num, (data, target) in enumerate(self.training_loader):
             data, target = data.to(self.device), target.to(self.device)
             self.netG.zero_grad()
@@ -130,6 +131,7 @@ class SRGANTrainer(object):
     def run(self):
         self.build_model()
         for epoch in range(1, self.epoch_pretrain + 1):
+            print("pretrain epoc {} ".format(epoch))
             self.pretrain()
             print("{}/{} pretrained".format(epoch, self.epoch_pretrain))
 
