@@ -1,0 +1,9 @@
+from keras.models import Sequential
+from keras.layers import Dense
+from keras.layers import Dropout
+m = Sequential()
+m.add(Dense(units=32,activation = 'relu', input_dim = 21))
+m.add(Dropout(0.5))
+m.add(Dense(units=16,activation = 'relu'))
+m.add(Dropout(0.5))
+m.add(Dense(units=3,activation = ))
