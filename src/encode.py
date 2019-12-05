@@ -13,3 +13,5 @@ decoded = Dense(784, activation='sigmoid')(encoded)
 
 # this model maps an input to its reconstruction
 autoencoder = Model(input_img, decoded)
+# this model maps an input to its encoded representation
+encoder = Model(input_img, encoded)
