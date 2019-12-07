@@ -67,7 +67,7 @@ y_test=test_data[:,0]
 
 from sklearn.model_selection import train_test_split
 x_train,x_validate,y_train,y_validate = train_test_split(x_train,y_train,test_size = 0.2,random_state = 12345)
-
+%matplotlib inline
 import matplotlib.pyplot as plt
 %matplotlib notebook
 image = x_train[254,:].reshape((28,28))
